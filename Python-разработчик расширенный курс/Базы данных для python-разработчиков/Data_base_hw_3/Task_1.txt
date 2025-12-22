@@ -1,0 +1,239 @@
+--Жанры
+
+INSERT INTO musical_genre(name)
+VALUES('POP');
+
+INSERT INTO musical_genre(name)
+VALUES('ROCK');
+
+INSERT INTO musical_genre(name)
+VALUES('HIP-HOP');
+
+INSERT INTO musical_genre(name)
+VALUES('RAP');
+
+
+--Музыканты
+
+INSERT INTO musicians(name)
+VALUES('Lady Gaga');
+
+INSERT INTO musicians(name)
+VALUES('50 cent');
+
+INSERT INTO musicians(name)
+VALUES('Slash');
+
+INSERT INTO musicians(name)
+VALUES('Sabaton');
+
+INSERT INTO musicians(name)
+VALUES('Eminem');
+
+INSERT INTO musicians(name)
+VALUES('Radio Tapok');
+
+
+--Жанры и Музыканты
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(1, 1);
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(3, 2);
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(2, 3);
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(2, 4);
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(4, 5);
+
+INSERT INTO genre_and_musician(genreid, musicianid)
+VALUES(2, 6);
+
+
+--Альбомы
+
+INSERT INTO albums(name, date)
+VALUES('The Fame', '2008-01-01');
+
+INSERT INTO albums(name, date)
+VALUES('Forever King', '2009-07-03'); 
+
+INSERT INTO albums(name, date)
+VALUES('The Last Stand', '2016-08-19'); 
+
+INSERT INTO albums(name, date)
+VALUES('Singl', '2012-11-26');
+
+INSERT INTO albums(name, date)
+VALUES('Эпоха империй', '2023-07-30');
+
+INSERT INTO albums(name, date)
+VALUES('The Great War', '2019-07-19');
+
+INSERT INTO albums(name, date)
+VALUES('The Attack Of The Dead Men', '2020-05-08');
+
+
+
+
+-- Альбомы и Исполнители
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(1, 1);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(2, 2);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(3, 4);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(4, 5);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(6, 4);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(7, 4);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(7, 6);
+
+INSERT INTO musicians_albums(albumid, musicianid)
+VALUES(4, 2);
+
+
+--Треки
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Just Dance', 241, 1);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Poker Face', 237, 1);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('LoveGame', 213, 1);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('I am Paranoid', 168, 2);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Respect It Or Check It', 222, 2);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Things We Do', 196, 2);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Hill 3234', 209, 3);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('The Last Stand', 235, 3);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Shiroyama', 211, 3);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('My life', 237, 4);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Fields Of Verdun', 197, 6);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Great War', 268, 6);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('The Attack Of The Dead Men', 235, 7);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Гангут', 283, 5);
+
+INSERT INTO tracks(name, duration, albumid)
+VALUES('Белая Лилия', 204, 5);
+
+
+--Сборники
+
+INSERT INTO collections(name, date)
+VALUES('Hits 2000s', '2010-12-12');
+
+INSERT INTO collections(name, date)
+VALUES('Youth Music', '2017-03-23');
+
+INSERT INTO collections(name, date)
+VALUES('Radio NRJ', '2020-02-15');
+
+INSERT INTO collections(name, date)
+VALUES('My_music', '2025-06-05');
+
+INSERT INTO collections(name, date)
+VALUES('Sabaton ft Radio Tapok лучшее', '2021-05-14');
+
+--Сборники и Треки
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(1, 1);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(3, 1);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(5, 1);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(6, 1);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(2, 2);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(3, 2);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(5, 2);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(7, 2);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(9, 3);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(8, 3);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(5, 3);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(7, 4);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(8, 4);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(9, 4);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(11, 4);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(12, 4);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(13, 5);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(14, 5);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(7, 5);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(9, 5);
+
+INSERT INTO collection_tracks(trackid, collectionid)
+VALUES(11, 5);
